@@ -1,0 +1,48 @@
+{% set imgWidth = 150 %}
+{% set imgHeight = 150 %}
+{% set cols = 3 %}
+{% set cropMode = 'crop' %}
+{% set k = 0 %}
+{% set albums = __SELF__.albums %}
+
+<div class="photo_album">
+	{% for album in albums %}
+		<div class="album">
+		{% if k > 0 %}
+			{% set k = 0 %}
+			</div>
+		{% endif %}
+
+		<h1>{{ album.name }}</h1>
+
+		{% if album.description != '' %}
+			<p class="description">{{ album.description }}</p>
+		{% endif %}
+
+		{% for photo in album.photos %}
+			{% if k == 0 %}
+				<div class="row">
+			{% endif %}
+
+			<div class="col-md-{{ 12 / cols }}">
+				<a href="{{ photo.getPath }}"><img src="{{ photo.getThumb( imgWidth, imgHeight, { mode : cropMode }) }}"></a>
+				<p>{{ photo.title }}</p>
+			</div>
+
+			{% set k = k + 1 %}
+
+			{% if k == cols %}
+				{% set k = 0 %}
+ 	 			</div>
+			{% endif %}
+		{% endfor %}
+
+		{% if k > 0 %}
+			{% set k = 0 %}
+			</div>
+		{% endif %}
+
+		</div>
+	</div>
+	{% endfor %}
+</div>

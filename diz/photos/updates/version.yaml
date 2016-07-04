@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table diz_photos_table'
+    - builder_table_create_diz_photos_table.php
+1.0.3:
+    - 'Drop table diz_photos_table'
+    - builder_table_delete_diz_photos_table.php
+1.0.4:
+    - 'Created table diz_photos_table'
+    - builder_table_create_diz_photos_table_2.php
+1.0.5:
+    - 'Updated table diz_photos_table'
+    - builder_table_update_diz_photos_table.php

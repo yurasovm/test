@@ -1,0 +1,39 @@
+fields: {  }
+tabs:
+    fields:
+        name:
+            label: Название
+            oc.commentPosition: ''
+            span: auto
+            type: text
+            tab: 'Свойства альбома'
+        visible:
+            label: Показывать
+            span: auto
+            type: switch
+            tab: 'Свойства альбома'
+        description:
+            label: Описание
+            size: huge
+            oc.commentPosition: ''
+            span: full
+            type: textarea
+            tab: 'Свойства альбома'
+        date:
+            label: 'Дата создания'
+            oc.commentPosition: ''
+            mode: date
+            span: auto
+            type: datepicker
+            tab: 'Свойства альбома'
+        photos:
+            label: 'Добавить фото'
+            oc.commentPosition: ''
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: full
+            type: fileupload
+            tab: Фото

@@ -1,0 +1,11 @@
+plugin:
+    name: 'diz.photos::lang.plugin.name'
+    description: 'diz.photos::lang.plugin.description'
+    author: Diz
+    icon: oc-icon-image
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Фотоальбом
+        url: /diz/photos/photos
+        icon: icon-image

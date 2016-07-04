@@ -1,0 +1,10 @@
+name: Photos
+form: $/diz/photos/models/photos/fields.yaml
+modelClass: Diz\Photos\Models\Photos
+defaultRedirect: diz/photos/photos
+create:
+    redirect: 'diz/photos/photos/update/:id'
+    redirectClose: diz/photos/photos
+update:
+    redirect: diz/photos/photos
+    redirectClose: diz/photos/photos

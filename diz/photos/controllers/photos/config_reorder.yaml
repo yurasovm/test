@@ -1,0 +1,4 @@
+title: Photos
+modelClass: Diz\Photos\Models\Photos
+toolbar:
+    buttons: reorder_toolbar
